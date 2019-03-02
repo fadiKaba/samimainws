@@ -72,7 +72,21 @@ header {
       font-family: "Lobster", cursive;
       font-size: 5.625rem;
       line-height: 6.7rem;
-      color: #f4f4f4; }
+      color: #f4f4f4;
+      animation: rotat3d 2s ease-in-out; }
+
+@keyframes rotat3d {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0;
+    transform: scale(0.1) rotate3d(1, -3, 1, 160deg) translate(100px, 20px); }
+  90% {
+    opacity: 1;
+    transform: scale(1.5) rotate3d(1, 1, 1, 0deg) translate(0); }
+  100% {
+    transform: scale(1);
+    text-shadow: 5px 5px 30px #757575; } }
       #sec1 .welcom h2 .welcome-single {
         margin-right: 150px; }
       #sec1 .welcom h2 .w {
@@ -125,10 +139,30 @@ header {
       width: 200px;
       font-size: 0.8rem; }
   #sec1 .main-img-div img {
-    width: 400px;
+    width: 350px;
     padding-bottom: 10px; } }
 
-@media screen and (max-width: 705px) {
+@media screen and (max-width: 730px) {
+  #sec1 .welcom {
+    height: 200px; }
+    #sec1 .welcom h2 {
+      font-size: 2.2rem;
+      line-height: 3.5rem; }
+    #sec1 .welcom span.welcome-single {
+      margin-right: 40px;
+      text-align: right; }
+    #sec1 .welcom span.w {
+      font-size: 3.56rem; }
+    #sec1 .welcom p {
+      padding-top: 0.5rem;
+      width: 200px;
+      font-size: 0.8rem;
+      line-height: 1rem; }
+  #sec1 .main-img-div img {
+    width: 300px;
+    padding-bottom: 10px; } }
+
+@media screen and (max-width: 520px) {
   header h1#sami {
     width: 100%; }
   #sec1 {

@@ -3,6 +3,7 @@
 var gulp = require("gulp");
 var sass = require("gulp-sass");
 const imagemin = require("gulp-imagemin");
+const autoprefixer = require("gulp-autoprefixer");
 
 sass.compiler = require("node-sass");
 
@@ -22,4 +23,16 @@ gulp.task("imagemin", () =>
     .src("work/images/*")
     .pipe(imagemin())
     .pipe(gulp.dest("src/img"))
+);
+
+gulp.task("prefix", () =>
+  gulp
+    .src("src/css/main.css")
+    .pipe(
+      autoprefixer({
+        browsers: ["last 2 versions"],
+        cascade: false
+      })
+    )
+    .pipe(gulp.dest("src/css/"))
 );
