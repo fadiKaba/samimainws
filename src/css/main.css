@@ -134,8 +134,6 @@ header {
   #sec1 {
     grid-template-columns: 1fr; }
     #sec1 .welcom {
-      box-sizing: border-box;
-      height: 100px;
       text-align: center;
       width: 310px;
       margin: 20px auto; }
@@ -151,7 +149,7 @@ header {
         font-size: 0.8rem;
         text-align: center; }
     #sec1 .main-img-div {
-      display: img;
-        display-width: 300px;
-        display-padding-bottom: 10px;
-        display-margin: auto; } }
+      text-align: center; }
+      #sec1 .main-img-div img {
+        width: 300px;
+        padding-bottom: 10px; } }
