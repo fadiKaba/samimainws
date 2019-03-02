@@ -1,0 +1,157 @@
+body {
+  background-color: #232323;
+  font-family: "Raleway", sans-serif; }
+
+header {
+  background: #232323;
+  margin-top: 2.5rem; }
+  header .h1-div {
+    width: 100%; }
+    header .h1-div h1 {
+      width: 50%;
+      color: #f4f4f4;
+      font-family: "Overlock", cursive;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.8rem;
+      position: relative;
+      margin: auto;
+      text-align: center; }
+      header .h1-div h1:after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: #fe5f17;
+        position: absolute;
+        top: 1.8rem;
+        left: 0;
+        animation: this 1s ease-in-out; }
+
+@keyframes this {
+  0% {
+    width: 0; }
+  100% {
+    width: 100%; } }
+  header .main-navbar #menu-btn {
+    color: #fff; }
+  header .main-navbar #navbarNavDropdown {
+    justify-content: center; }
+    header .main-navbar #navbarNavDropdown a {
+      color: #f4f4f4;
+      margin-top: 1.3rem;
+      padding: 0 3rem;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      position: relative; }
+      header .main-navbar #navbarNavDropdown a:hover {
+        color: #fe5f17;
+        transition: 1s ease; }
+    header .main-navbar #navbarNavDropdown .dropdown-menu {
+      background-color: #232323;
+      text-align: center;
+      box-shadow: 5px 5px 10px #161616; }
+      header .main-navbar #navbarNavDropdown .dropdown-menu a {
+        padding: 0.3rem 0 0.3rem 0;
+        margin: 0;
+        text-transform: lowercase; }
+        header .main-navbar #navbarNavDropdown .dropdown-menu a:hover {
+          background: none; }
+
+#sec1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center; }
+  #sec1 .welcom {
+    background: #232323;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: right;
+    height: 400px;
+    align-content: flex-start; }
+    #sec1 .welcom h2 {
+      font-family: "Lobster", cursive;
+      font-size: 5.625rem;
+      line-height: 6.7rem;
+      color: #f4f4f4; }
+      #sec1 .welcom h2 .welcome-single {
+        margin-right: 150px; }
+      #sec1 .welcom h2 .w {
+        font-size: 6.56rem; }
+    #sec1 .welcom p {
+      padding-top: 4rem;
+      justify-self: end;
+      font-size: 1rem;
+      width: 400px;
+      line-height: 1.6rem;
+      color: #f4f4f4;
+      text-align: left; }
+      #sec1 .welcom p a {
+        color: #f4f4f4;
+        text-decoration: none;
+        border-bottom: 1.5px #f4f4f4 solid; }
+  #sec1 .main-img-div img {
+    width: 600px;
+    padding-bottom: 30px;
+    z-index: 1; }
+
+@media screen and (max-width: 1140px) {
+  #sec1 .welcom {
+    height: 350px; }
+    #sec1 .welcom h2 {
+      font-size: 4rem;
+      line-height: 5rem; }
+    #sec1 .welcom span.welcome-single {
+      margin-right: 90px;
+      text-align: right; }
+    #sec1 .welcom span.w {
+      font-size: 5.56rem; }
+    #sec1 .welcom p {
+      width: 300px; }
+  #sec1 .main-img-div img {
+    width: 500px;
+    padding-bottom: 10px; } }
+
+@media screen and (max-width: 900px) {
+  #sec1 .welcom {
+    height: 300px; }
+    #sec1 .welcom h2 {
+      font-size: 3rem;
+      line-height: 3.8rem; }
+    #sec1 .welcom span.welcome-single {
+      margin-right: 60px;
+      text-align: right; }
+    #sec1 .welcom p {
+      padding-top: 1rem;
+      width: 200px;
+      font-size: 0.8rem; }
+  #sec1 .main-img-div img {
+    width: 400px;
+    padding-bottom: 10px; } }
+
+@media screen and (max-width: 705px) {
+  header h1#sami {
+    width: 100%; }
+  #sec1 {
+    grid-template-columns: 1fr; }
+    #sec1 .welcom {
+      box-sizing: border-box;
+      height: 100px;
+      text-align: center;
+      width: 310px;
+      margin: 20px auto; }
+      #sec1 .welcom h2 {
+        font-size: 3rem;
+        line-height: 3.8rem; }
+      #sec1 .welcom span.welcome-single {
+        margin-right: 15px;
+        text-align: right; }
+      #sec1 .welcom p {
+        padding: 1rem;
+        width: 100%;
+        font-size: 0.8rem;
+        text-align: center; }
+    #sec1 .main-img-div {
+      display: img;
+        display-width: 300px;
+        display-padding-bottom: 10px;
+        display-margin: auto; } }

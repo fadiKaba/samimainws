@@ -1,0 +1,29 @@
+$color1: #232323;
+$color2: #fe5f17;
+$color3: #f4f4f4;
+$font1: "Overlock", cursive;
+
+@mixin borderToRight {
+  &:after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: $color2;
+    position: absolute;
+    top: 1.8rem;
+    left: 0;
+    animation: this 1s ease-in-out;
+  }
+  @keyframes this {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+}
+
+@mixin transition {
+  transition: 1s ease;
+}
