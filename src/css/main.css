@@ -1,6 +1,6 @@
 body {
   background-color: #232323;
-  font-family: "Raleway", sans-serif; }
+  font-family: "Overlock", cursive; }
 
 header {
   background: "Overlock", cursive;
@@ -47,7 +47,7 @@ header {
       position: relative; }
       header .main-navbar #navbarNavDropdown a:hover {
         color: #fe5f17;
-        transition: 1s ease; }
+        transition: 0.3s ease; }
     header .main-navbar #navbarNavDropdown .dropdown-menu {
       background-color: #232323;
       text-align: center;
@@ -96,7 +96,7 @@ header {
     #sec1 .welcom p {
       padding-top: 4rem;
       justify-self: end;
-      font-size: 1rem;
+      font-size: 1.2rem;
       width: 400px;
       line-height: 1.6rem;
       color: #f4f4f4;
@@ -126,7 +126,7 @@ header {
     position: relative; }
     .about-me .about::after {
       content: "";
-      width: 10px;
+      width: 4px;
       height: 100%;
       background-color: #fe5f17;
       position: absolute;
@@ -142,20 +142,80 @@ header {
     .about-me .about div {
       overflow: hidden; }
       .about-me .about div p {
-        width: 500px;
+        line-height: 1.3rem;
+        font-size: 1.1rem;
+        width: 550px;
         color: #f4f4f4;
         animation: pToRight 1.5s ease-in-out; }
 
 @keyframes pToRight {
   0% {
-    margin-left: -500px; }
+    margin-left: -600px; }
   60% {
-    margin-left: -500px; }
+    margin-left: -600px; }
   100% {
     margin-left: 0px; } }
         .about-me .about div p span {
-          font-size: 30px;
+          font-size: 1.8rem;
           font-family: "Lobster", cursive; }
+
+.phone {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 850px;
+  margin: 60px auto;
+  position: relative; }
+  .phone .phonecon {
+    overflow: hidden; }
+    .phone .phonecon::after {
+      content: "";
+      width: 4px;
+      height: 100%;
+      background-color: #fe5f17;
+      position: absolute;
+      top: 0;
+      left: -20px;
+      animation: btoDown 1s ease-in-out; }
+
+@keyframes btoDown {
+  0% {
+    height: 0; }
+  100% {
+    height: 100%; } }
+    .phone .phonecon p,
+    .phone .phonecon a {
+      font-size: 0.8rem;
+      color: #f4f4f4;
+      line-height: 0.5rem;
+      letter-spacing: 0.5rem;
+      animation: phToRight 1.5s ease-in-out; }
+
+@keyframes phToRight {
+  0% {
+    margin-left: -200px; }
+  60% {
+    margin-left: -200px; }
+  100% {
+    margin-left: 0px; } }
+  .phone .about-btn-div {
+    text-align: right; }
+    .phone .about-btn-div a {
+      color: #f4f4f4;
+      border: 1px solid #fe5f17;
+      padding: 0.8rem 3rem;
+      font-size: 1rem;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: 0.3s ease; }
+      .phone .about-btn-div a:hover {
+        background-color: #5adba6;
+        border-color: #5adba6; }
+
+footer {
+  text-align: center; }
+  footer p {
+    color: #f4f4f4;
+    font-size: 0.8rem; }
 
 @media screen and (max-width: 1140px) {
   #sec1 .welcom {
