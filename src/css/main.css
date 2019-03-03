@@ -3,12 +3,12 @@ body {
   font-family: "Raleway", sans-serif; }
 
 header {
-  background: #232323;
+  background: "Overlock", cursive;
   margin-top: 2.5rem; }
   header .h1-div {
     width: 100%; }
     header .h1-div h1 {
-      width: 50%;
+      width: 35%;
       color: #f4f4f4;
       font-family: "Overlock", cursive;
       font-size: 1rem;
@@ -25,9 +25,9 @@ header {
         position: absolute;
         top: 1.8rem;
         left: 0;
-        animation: this 1s ease-in-out; }
+        animation: btoRight 1s ease-in-out; }
 
-@keyframes this {
+@keyframes btoRight {
   0% {
     width: 0; }
   100% {
@@ -36,6 +36,8 @@ header {
     color: #fff; }
   header .main-navbar #navbarNavDropdown {
     justify-content: center; }
+    header .main-navbar #navbarNavDropdown li.active a {
+      color: #fe5f17; }
     header .main-navbar #navbarNavDropdown a {
       color: #f4f4f4;
       margin-top: 1.3rem;
@@ -107,6 +109,53 @@ header {
     width: 600px;
     padding-bottom: 30px;
     z-index: 1; }
+
+.about-me {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: 900px;
+  background-color: #232323;
+  align-items: center;
+  margin: auto;
+  margin-top: 130px;
+  grid-gap: 40px; }
+  .about-me .about-img img {
+    width: 300px;
+    border-radius: 50%; }
+  .about-me .about {
+    position: relative; }
+    .about-me .about::after {
+      content: "";
+      width: 10px;
+      height: 100%;
+      background-color: #fe5f17;
+      position: absolute;
+      top: 0;
+      left: -20px;
+      animation: btoDown 1s ease-in-out; }
+
+@keyframes btoDown {
+  0% {
+    height: 0; }
+  100% {
+    height: 100%; } }
+    .about-me .about div {
+      overflow: hidden; }
+      .about-me .about div p {
+        width: 500px;
+        color: #f4f4f4;
+        animation: pToRight 1.5s ease-in-out; }
+
+@keyframes pToRight {
+  0% {
+    margin-left: -500px; }
+  60% {
+    margin-left: -500px; }
+  100% {
+    margin-left: 0px; } }
+        .about-me .about div p span {
+          font-size: 30px;
+          font-family: "Lobster", cursive; }
 
 @media screen and (max-width: 1140px) {
   #sec1 .welcom {
