@@ -122,8 +122,6 @@ header {
   .about-me .about-img img {
     border-radius: 50%;
     width: 300px;
-    image-rendering: auto;
-    image-rendering: crisp-edges;
     image-rendering: pixelated; }
 
 .about {
