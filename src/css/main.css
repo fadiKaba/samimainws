@@ -108,7 +108,8 @@ header {
   #sec1 .main-img-div img {
     width: 600px;
     padding-bottom: 30px;
-    z-index: 1; }
+    z-index: 1;
+    image-rendering: pixelated; }
 
 .about-me {
   display: grid;
