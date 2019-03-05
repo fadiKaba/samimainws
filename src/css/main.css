@@ -123,7 +123,8 @@ header {
   .about-me .about-img img {
     border-radius: 50%;
     width: 300px;
-    image-rendering: pixelated; }
+    image-rendering: pixelated;
+    image-rendering: crisp-edges; }
 
 .about {
   position: relative; }
